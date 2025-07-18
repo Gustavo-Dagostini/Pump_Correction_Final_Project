@@ -71,7 +71,12 @@ velocidade = vazao_volumetrica / A
 Re = Reynolds(rho=densidade,u=velocidade,D=D_int_m,mu=mu)
 c = f_atrito(Re, D=D_int_m, epsilon = 45e-6, f_init=0.02, tol=1e-6, max_iter=100)
 
+
 d = perda_de_carga(L=1, D = D_int_m , u=velocidade, f=c, rho=densidade)
+
+
+
+a=2
 
 
 

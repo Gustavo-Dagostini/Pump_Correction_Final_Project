@@ -28,7 +28,7 @@ def C_q_water_known(B):
     :param B: Parametro adimensional previamente calculado
     :return: C_q
     """
-    return  2.71**((-0.165*np.log10(B))**3.15)
+    return  pow(2.71, (-0.165 * (pow(np.log10(B),3.15))))
 
 def Q_vis_water_known(C_q,Q_w):
     """
@@ -117,7 +117,7 @@ def C_q_operation_known(B):
     :param B: Parametro adimensional previamente calculado
     :return: C_q
     """
-    return 2.71 ** ((-0.165 * np.log10(B)) ** 3.15)
+    return pow(2.71, (-0.165 * (pow(np.log10(5.7),3.15))))
 
 def C_h_operation_known(B):
     """
@@ -125,7 +125,7 @@ def C_h_operation_known(B):
     :param B: Parametro adimensional previamente calculado
     :return: C_q
     """
-    return 2.71 ** ((-0.165 * np.log10(B)) ** 3.15)
+    return pow(2.71, (-0.165 * (pow(np.log10(5.7),3.15))))
 
 
 def Q_w_operation_known(C_q, Q_vis):
@@ -137,7 +137,7 @@ def Q_w_operation_known(C_q, Q_vis):
     """
     return Q_vis / C_q
 
-def Q_H_operation_known(C_H, H_vis):
+def H_w_operation_known(C_H, H_vis):
     """
     Essa função retorna a vazão corrigida para o fluido viscoso
     :param C_q:
@@ -176,5 +176,3 @@ def potencia_operation_known(Q_vis, H_vis_total, s, eta_vis):
     :return:
     """
     return (Q_vis * H_vis_total * s) / (367 * eta_vis)
-
-def C_NPSH
