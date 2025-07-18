@@ -71,7 +71,7 @@ def calcular():
         f"Vazão corrigida com água: {Q_w:.2f} m³/h",
         f"Altura corrigida com água: {H_w:.2f} m",
         f"Eficiência com viscosidade: {eta_vis*100:.2f} %",
-        f"Potência com viscosidade: {P:.2f} W"
+        f"Potência com viscosidade: {P:.2f} kW"
     ]
 
     entrada = [

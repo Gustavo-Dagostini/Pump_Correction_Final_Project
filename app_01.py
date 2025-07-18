@@ -145,7 +145,7 @@ ttk.Label(frame, text="Vazão (Ponto de Melhor Eficiência [m³/h]):").grid(row=
 entry_q = ttk.Entry(frame)
 entry_q.grid(row=1, column=1)
 
-ttk.Label(frame, text="Altura Manométrica Total (Ponto de Melhor Eficiência) [m]:").grid(row=2, column=0)
+ttk.Label(frame, text="Altura Manométrica Total [m]:").grid(row=2, column=0)
 entry_h = ttk.Entry(frame)
 entry_h.grid(row=2, column=1)
 

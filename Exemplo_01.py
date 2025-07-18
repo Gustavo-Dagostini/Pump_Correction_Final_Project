@@ -38,7 +38,7 @@ if B <=1.0:
     C_eta = 1.0
 else:
     C_q = C_q_water_known(B)
-    Q_W = 0.1 * Q_BEP_W
+    Q_W = 1 * Q_BEP_W
     Q_Visc = Q_W*C_q
     C_BEP_H = C_BEp_H_water_known(C_q)
     C_h = C_H_water_known(C_BEp_H =C_BEP_H ,Q_W = Q_W,Q_BEP_W = Q_BEP_W)
