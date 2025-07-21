@@ -23,7 +23,7 @@ This project consists of a set of Python applications with graphical interfaces 
 ### 3. Pressurized Pipeline Flow Calculation (`app_03_pressurized_flow.py`)
 
 - **Source:** Flow calculations for pressurized pipelines applied to industrial systems.
-- **Purpose:** Calculates Reynolds number, friction factor (using an iterative method for Darcy-Weisbach factor), pressure drop per meter, maximum pipe length based on pressure limits, total head, velocity, and mass flow rate.
+- **Purpose:** Calculates Reynolds number, friction factor (using an iterative method for Colebrook-White formula, pressure drop per meter, maximum pipe length based on pressure limits, total head, velocity, and mass flow rate.
 - **Inputs:** Gravity, dynamic viscosity, density, maximum and minimum pressure, pressure drop divisor coefficient, volumetric flow rate, pipe diameter, pipe roughness.
 - **Outputs:** Reynolds number, friction factor, pressure drop per meter, maximum pipe length, total head, mass flow rate, and velocity.
 - **Tools used:** The `flow_resistance.py` library implements classical hydraulic calculations.
